@@ -1,69 +1,60 @@
 package fdv.bikerental.model;
-import java.util.HashSet;
-import java.util.Set;
-
 
 /**
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
+ * This class represents a bike rent request placed by a client. It is assumed that this class comes fulfilled by the front-end.
+ * The problems has been simplified to be able to finish the assignment on time.
+ * I'm assuming we have just ONE TYPE of bike.
  * @generated
  */
 
 public class RentRequest
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public Map bikeModels;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
+	private Integer rentDuration;	
+	private RentType rentType;
+	private Integer numberOfBikes;
+	private Promotion promotion;
 	
-	public int rentDuration;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
 	
-	public RentType rentType;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public Promotion promotion;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public ArrayList clients;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public RentRequest(){
-		super();
+	/*Getters and Setters
+	 * */
+	public Integer getRentDuration() {
+		return rentDuration;
 	}
+
+	public void setRentDuration(Integer rentDuration) {
+		this.rentDuration = rentDuration;
+	}
+
+	public RentType getRentType() {
+		return rentType;
+	}
+
+	public void setRentType(RentType rentType) {
+		this.rentType = rentType;
+	}
+
+	public Promotion getPromotion() {
+		return promotion;
+	}
+
+	public void setPromotion(Promotion promotion) {
+		this.promotion = promotion;
+	}
+	public Integer getNumberOfBikes() {
+		
+		return numberOfBikes;
+	}
+
+	public void setNumberOfBikes(Integer numberOfBikes) {
+		
+		this.numberOfBikes = numberOfBikes;
+	}
+	
+
+	
+
+
 
 }
 

@@ -22,11 +22,19 @@ A company rents bikes under following options:
 Note: we don't expect any kind of application, just a set of classes with its automated tests.
 
 # Deliverables:
-The link to your repository 
+The link to your repository  (this is the repository)
 
-#The proposed solution
+# The FORMER proposed solution (I'll do this more long term)
 
-1st. I will make a UML model, just to understand the problem.
-2nd. I will generate the basic class structure (...with the very same modeler, in this case I used "genmymodel.com").
-3rd. I will drive the development using the test cases, is slower, but still a lot of fun to code!
+1st. I will make a UML model, just to understand the problem. 
+2nd. I will generate the basic class structure (...with the very same modeler, in this case I used "genmymodel.com"). 
+3rd. I will drive the development using the test cases, is slower, but still a lot of fun to code! 
 4th. Iterate the 3rd step, until all the tests cases pass.
+
+# The proposed solution
+
+I'm going to simplify the problem, assuming things, so I can finish it on time.
+Assumptions:
+-There is just one type of bike.
+-There is no need to check stock.
+-The bikes must be rented for WHOLE numbers: weeks, days or hours...it can't be rented for one week and two days plus two hours. Nope. Out of scope.

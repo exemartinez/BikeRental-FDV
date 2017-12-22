@@ -7,25 +7,19 @@ package fdv.bikerental.model;
  * @generated
  */
 
-public class RentByDay extends RentType
+public final class RentByDay extends RentType
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public double cost;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public RentByDay(){
-		super();
+	public final Double COST = new Double(20);
+	public final Integer TIME_SPAN = new Integer(24);
+	public Double getCOST() {
+		return COST;
 	}
+	public Integer getTIME_SPAN() {
+		return TIME_SPAN;
+	}
+
+
 
 }
 

@@ -2,45 +2,33 @@ package fdv.bikerental.model;
 
 
 /**
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
+ * Implements the constraints to rent a bike, in general terms.
  * @generated
  */
 
 public abstract class RentType
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public double cost;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
 	
-	public int timeSpan;
+	public Double COST;	
+	public Double getCOST() {
+		return COST;
+	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public RentRequest requestRent;
+	public void setCOST(Double cOST) {
+		COST = cOST;
+	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
+	public Integer getTIME_SPAN() {
+		return TIME_SPAN;
+	}
+
+	public void setTIME_SPAN(Integer tIME_SPAN) {
+		TIME_SPAN = tIME_SPAN;
+	}
+
+	public Integer TIME_SPAN;
+
 	public RentType(){
 		super();
 	}

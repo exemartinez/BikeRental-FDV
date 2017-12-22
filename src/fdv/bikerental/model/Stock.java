@@ -1,4 +1,4 @@
-package model;
+package fdv.bikerental.model;
 
 
 /**
@@ -9,6 +9,22 @@ package model;
 
 public class Stock
 {
+	public int getAvailableAmount() {
+		return availableAmount;
+	}
+
+	public void setAvailableAmount(int availableAmount) {
+		this.availableAmount = availableAmount;
+	}
+
+	public int getRentedAmount() {
+		return rentedAmount;
+	}
+
+	public void setRentedAmount(int rentedAmount) {
+		this.rentedAmount = rentedAmount;
+	}
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -17,6 +33,14 @@ public class Stock
 	 */
 	
 	public BikeModel model;
+
+	public BikeModel getModel() {
+		return model;
+	}
+
+	public void setModel(BikeModel model) {
+		this.model = model;
+	}
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -34,16 +58,7 @@ public class Stock
 	 * @ordered
 	 */
 	
-	public int rentedAmount;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public StockManager stockManager;
+	public int rentedAmount;	
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -1,4 +1,4 @@
-package model;
+package fdv.bikerental.model;
 
 
 /**
@@ -16,7 +16,7 @@ public class BikeModel
 	 * @ordered
 	 */
 	
-	public String name;
+	private String name;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -25,16 +25,8 @@ public class BikeModel
 	 * @ordered
 	 */
 	
-	public double cost;
+	private double cost;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public StockManager stockManager;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -43,6 +35,22 @@ public class BikeModel
 	 */
 	public BikeModel(){
 		super();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getCost() {
+		return cost;
+	}
+
+	public void setCost(double cost) {
+		this.cost = cost;
 	}
 
 }

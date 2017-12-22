@@ -1,39 +1,27 @@
 package fdv.bikerental.model;
 
 /**
- * <!-- begin-user-doc -->
- * <!--  end-user-doc  -->
+ * How the Family promotion should work, and what restrictions it has.
  * @generated
  */
 
 public class Family extends Promotion
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public int minAmountRentedModels;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
+	protected final Double discount = new Double(0.3); //this is a 30% discount
+	protected final Integer minAmountRentedModels=new Integer(3);
+	protected final Integer maxAmountRentedModels=new Integer(5);
 	
-	public int maxAmountRentedModels;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public Family(){
-		super();
+	public Double getDiscount() {
+		return discount;
 	}
+	public Integer getMinAmountRentedModels() {
+		return minAmountRentedModels;
+	}
+	public Integer getMaxAmountRentedModels() {
+		return maxAmountRentedModels;
+	}
+	
 
 }
 

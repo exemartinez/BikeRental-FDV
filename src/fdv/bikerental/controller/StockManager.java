@@ -1,6 +1,9 @@
 package fdv.bikerental.controller;
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Map;
 import java.util.Set;
+
+import fdv.bikerental.model.BikeModel;
 
 
 /**
@@ -10,7 +13,7 @@ import java.util.Set;
  */
 
 public class StockManager
-{
+{	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -18,7 +21,7 @@ public class StockManager
 	 * @ordered
 	 */
 	
-	public Stock stock;
+	private Map stock;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -27,7 +30,7 @@ public class StockManager
 	 * @ordered
 	 */
 	
-	public Set<BikeModel> bikeModel;
+	private Map<String, BikeModel> bikeModels;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -36,6 +39,7 @@ public class StockManager
 	 */
 	public StockManager(){
 		super();
+
 	}
 
 	/**
@@ -72,6 +76,22 @@ public class StockManager
 	public boolean rentModel(BikeModel bike) {
 		// TODO implement me
 		return false;
+	}
+
+	public Map getStock() {
+		return stock;
+	}
+
+	public void setStock(Map stock) {
+		this.stock = stock;
+	}
+
+	public Map<String, BikeModel> getBikeModels() {
+		return this.bikeModels;
+	}
+
+	public void setBikeModels(Map<String, BikeModel> bikeModels) {
+		this.bikeModels = bikeModels;
 	}
 
 }
